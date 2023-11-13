@@ -20,6 +20,15 @@ public class Main {
 
         System.out.println("Fibonacci number at position " + n + ": " + recursionFibonacciResult);
 
+        // ---------------------- СУМА ЦИФР ЧИСЛА  +  СУМА ДВОХ ЧИСЕЛ БЕЗ +
+        NSum nsum = new NSum();
+        SumOfTwoNumbers sumOfTwoNumbers = new SumOfTwoNumbers();
 
+        int number = 1234;
+        int sumOfDigits = nsum.execute(number);
+        int recursiveSum = sumOfTwoNumbers.execute(5, 10);
+
+        System.out.println("Sum of digits in " + number + ": " + sumOfDigits);
+        System.out.println("Recursive sum of 5 and 10: " + recursiveSum);
     }
 }
